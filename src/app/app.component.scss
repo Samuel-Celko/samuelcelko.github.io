@@ -1,0 +1,243 @@
+@font-face {
+  font-family: 'NerisLight';
+  src: url("../assets/fonts/Neris-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NerisSemibold';
+  src: url("../assets/fonts/Neris-SemiBold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NerisThin';
+  src: url("../assets/fonts/Neris-Thin.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'StagBold';
+  src: url("../assets/fonts/Stag-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'StagSemibold';
+  src: url("../assets/fonts/Stag-Semibold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.content {
+  height: 100%;
+  color: #676767;
+
+  .header {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .logo {
+      align-self: flex-start;
+      max-width: 236px;
+      max-height: 113px;
+      width: auto;
+      height: auto;
+      margin: 26px 69px 0;
+    }
+    .heading {
+      flex: 0 1 auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 3.3em;
+      font-family: NerisThin;
+      padding-top: 70px;
+    }
+
+  }
+
+  .mid {
+    height: auto;
+
+  }
+
+  .footer {
+    padding-top: 30px;
+
+    .top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .coming-soon {
+        font-family: StagSemibold;
+        font-size: 45px;
+        color: #9e2d87;
+      }
+
+      .scrollable-area {
+        margin-top: 20px;
+        height: 90px;
+        width: 700px;
+        overflow: auto;
+        font-family: NerisLight;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        padding: 0 11px;
+        color: #8e8d8d;
+      }
+    }
+
+    .bottom {
+      padding-top: 40px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .social {
+        width: 300px;
+      }
+
+      .eighteen {
+        b {
+          font-size: 18px;
+          color: #737373;
+        }
+        width: 700px;
+        font-family: NerisLight;
+        text-align: center;
+        color: #8e8d8d;
+        font-size: 14px;
+      }
+
+      .commission {
+        width: 300px;
+      }
+    }
+  }
+}
+
+/**
+  IPAD OVERRIDES
+ */
+@media (min-width: 768px) and (max-width: 768px) {
+  .logo {
+    margin-left: 0px !important;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .eighteen {
+      width: auto !important;
+      text-align: left !important;
+      padding-right: 14px;
+    }
+
+    .scrollable-area {
+      margin-top: 10px !important;
+      width: auto !important;
+      height: 210px !important;
+      text-align: left !important;
+    }
+
+    .top {
+      display: block !important;
+    }
+
+    .coming-soon {
+      padding-left: 20px;
+    }
+
+    .bottom {
+      display: block !important;
+      padding-left: 20px;
+
+      .social {
+        position: absolute;
+        bottom: 24px;
+        left: -18px;
+      }
+
+      .commission {
+        margin-bottom: -100px;
+      }
+    }
+
+  }
+}
+
+/**
+  PHONE OVERRIDES
+ */
+@media (max-width: 500px) {
+
+  .header {
+    height: 110px !important;
+
+    .logo {
+      width: 104px !important;
+      margin: 30px 0 0 10px !important;
+    }
+
+    .heading {
+      padding: 40px 0 0 !important;
+      font-size: 1.5em !important;
+    }
+  }
+
+  .footer {
+    padding-top: 15px !important;
+    .coming-soon {
+      font-size: 25px !important;
+    }
+
+    .scrollable-area {
+      padding: 0 20px !important;
+      font-size: 14px !important;
+      line-height: 18px !important;
+      width: auto !important;
+      height: 144px !important;
+      margin-top: 15px !important;
+    }
+
+    .social {
+      position: absolute;
+      bottom: 75px;
+      left: -18px;
+      img{
+        height: 17px;
+      }
+    }
+
+    .commission {
+      width: 100px !important;
+      img {
+        width: 80px !important;
+      }
+    }
+  }
+
+  .bottom{
+    padding: 35px 8px 0 !important;
+  }
+  .eighteen{
+    font-size: 10px !important;
+    text-align: left !important;
+    b{
+      font-size: 12px !important;
+    }
+  }
+
+}
+
