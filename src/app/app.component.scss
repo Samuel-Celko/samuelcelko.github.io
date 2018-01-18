@@ -93,6 +93,7 @@
         text-align: center;
         padding: 0 11px;
         color: #8e8d8d;
+        -webkit-overflow-scrolling: touch;
       }
     }
 
@@ -147,7 +148,7 @@
     .scrollable-area {
       margin-top: 10px !important;
       width: auto !important;
-      height: 210px !important;
+      height: 150px !important;
       text-align: left !important;
     }
 
@@ -207,29 +208,30 @@
       font-size: 14px !important;
       line-height: 18px !important;
       width: auto !important;
-      height: 144px !important;
+      height: auto !important;
       margin-top: 15px !important;
+      overflow: hidden !important;
     }
 
     .social {
-      position: absolute;
-      bottom: 75px;
-      left: -18px;
+      text-align: center !important;
+      width: 148px !important;
       img{
         height: 17px;
+        margin-left: 0px !important;
       }
     }
 
     .commission {
       width: 100px !important;
       img {
-        width: 80px !important;
+        width: 75px !important;
       }
     }
   }
 
   .bottom{
-    padding: 35px 8px 0 !important;
+    padding: 10px 8px 0 !important;
   }
   .eighteen{
     font-size: 10px !important;
