@@ -5,11 +5,20 @@
     <div class="heading">Presents</div>
   </div>
   <div class="mid">
-    <picture>
-      <source media="(max-width: 400px)" srcset="../assets/images/HG-cover-photo-360px.png">
-      <source media="(max-width: 970px)" srcset="../assets/images/HG-cover-photo-768px.png">
-      <img src="../assets/images/HG-cover-photo-1366px.png" alt="Flowers" style="width:100%; max-height: 480px;">
-    </picture>
+
+
+    <img src="../assets/images/HG-cover-photo-1366px.png" style="width:100%; max-height: 480px;"
+         srcset="../assets/images/HG-cover-photo-360px.png 360w, ./assets/images/HG-cover-photo-768px.png 768w, ../assets/images/HG-cover-photo-1366px.png 1366w"
+         sizes="(max-width: 552px) 360px, (max-width: 1062px)  768px, (min-width: 1070px)  1366px">
+
+
+    <!--
+<picture>
+  <source srcset="../assets/images/HG-cover-photo-360px.png" media="(max-width: 400px)" >
+  <source srcset="../assets/images/HG-cover-photo-768px.png" media="(min-width: 400px) and (max-width: 970px)" >
+  <source srcset="../assets/images/HG-cover-photo-1366px.png" media="(min-width: 970px)" >
+  <img srcset="../assets/images/HG-cover-photo-1366px.png"  style="width:100%; max-height: 480px;">
+</picture>-->
   </div>
 
   <div class="footer">
@@ -36,12 +45,19 @@
 
     <div class="bottom">
       <div class="social">
-        <a href="https://www.facebook.com/healthlotterygames"><img style="margin-left: 50px;" src="../assets/images/social-fb.png"/></a>
+        <a href="https://www.facebook.com/healthlotterygames"><img style="margin-left: 50px;"
+                                                                   src="../assets/images/social-fb.png"/></a>
         <a href="https://www.twitter.com/healthgames_uk"><img src="../assets/images/social-tw.png"/></a>
       </div>
-      <div class="eighteen"> <b>18+</b> You must be 18 or over to play or claim a prize. Underage gambling is an offence. The Health Lottery (ELM) Limited is licensed and regulated by the Gambling Commission (license no. 000-026057-R-309179)</div>
+      <div class="eighteen"><b>18+</b> You must be 18 or over to play or claim a prize. Underage gambling is an offence.
+        Licensed & regulated by the Alderney Gambling Control Commission | Company Registration Number 1908 | <a
+          href="https://secure.gamblingcommission.gov.uk/PublicRegister/Search/Detail/39147">Our UK based gambling
+          services are licensed by the UK Gambling Commission | Licence number 000-039147-R-319319-001</a> Registered
+        Office Inchalla, Le Val, Alderney GY9 3UL. Bear Group Ltd is a wholly owned subsidiary of Gaming Realms PLC.
+      </div>
       <div class="commission">
-        <img style="width: 124px;" src="../assets/images/Gambling-Commission-logo-transparent.png"/>
+        <a href="https://secure.gamblingcommission.gov.uk/PublicRegister/Search/Detail/39147"><img style="width: 124px;"
+                                                                                                   src="../assets/images/Gambling-Commission-logo-transparent.png"/></a>
         <img src="../assets/images/gambleaware.png"/>
       </div>
     </div>
